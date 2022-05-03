@@ -1,7 +1,7 @@
 <template>
   <footer>
       <div class="container">
-          <div class="row">
+          <div class="row  text-center">
               <div class="col">
                   <img src="@/assets/img/la-molisana-logo.png" alt="">
 
@@ -32,6 +32,12 @@
   </footer>
 </template>
 
+<script>
+export default {
+    name:'FooterComponent',
+}
+</script>
+
 <style lang="scss" scoped>
 footer{
     background-image: url('@/assets/img/footer-montagne-bottom.jpg');
@@ -39,10 +45,18 @@ footer{
     background-position: bottom;
     padding-top: 3rem;
     height: 400px;
+
+    h3{
+        font-size: 1.5rem;
+        margin-bottom:1rem;
+    }
+
+    
+    ul{
+    list-style: none;
+    line-height: 1.5rem;
+    }
 }
 
-ul{
-    list-style: none;
-}
 
 </style>

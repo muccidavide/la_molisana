@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <SiteHeader/>
-    <main>
-      <h1>Lista prodotti</h1>
-    </main>
+    <SiteMain/>
     <SiteFooter/>
 
   </div>
@@ -11,6 +9,7 @@
 
 <script>
 import SiteHeader from '@/components/HeaderComponent.vue';
+import SiteMain from '@/components/MainComponent.vue';
 import SiteFooter from '@/components/FooterComponent.vue';
 
 
@@ -19,16 +18,36 @@ export default {
   components: {
     SiteHeader,
     SiteFooter,
-  }
+    SiteMain,
+  },
+
+
 }
 </script>
 
 <style lang="scss">
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+
+/* Utility */
+@import '@/assets/sass/_common.scss';
+@import '@/assets/sass/_common.scss';
+
+.text-center{
+  text-align: center;
 }
+
+main{
+  background-image: url('@/assets/img/fondo-pag-speciali.jpg');
+  min-height: 50vh;
+  background-size: cover;
+  padding-bottom:2rem;
+  
+h1{
+  text-align: center;
+  padding: 2rem 0;
+}
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -37,24 +56,7 @@ export default {
   margin-top: 60px;
 }
 
-main{
-  background-image: url('@/assets/img/fondo-pag-speciali.jpg');
-  min-height: 50vh;
-  background-size: cover;
-}
 
-/* Grid System */
 
-.container{
-  margin: auto;
-  max-width: 1440px;
-}
-
-.row{
-  display: flex;
-  flex-wrap: wrap;
-}
-.col{
-  flex-grow:1;
-}
+@import '@/assets/sass/_grid_system.scss'
 </style>

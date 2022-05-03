@@ -1,6 +1,6 @@
 <template>
     <header>
-      <img alt="Vue logo" src="@/assets/img/la-molisana-logo.png">s
+      <img alt="Vue logo" src="@/assets/img/la-molisana-logo.png">
       <nav>
         <a href="#">Home</a>
         <a class="active" href="#">Prodotti</a>
@@ -9,6 +9,12 @@
       </nav>
     </header>
 </template>
+
+<script>
+export default {
+    name:'HeaderComponent',
+}
+</script>
 
 <style lang="scss" scoped>
 header{

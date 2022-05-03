@@ -1,0 +1,22 @@
+
+/* Grid System */
+
+.container{
+    margin: auto;
+    max-width: 1440px;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem ;
+    margin-right: -1rem ;
+  }
+  .col{
+    flex-grow:1;
+  }
+  
+  .col-3{
+    width: calc(100%/ 12)*3;
+  }
+  
